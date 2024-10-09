@@ -1,0 +1,100 @@
+body{
+    padding: 2%;
+    background-color: #edf2f8;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+p{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+span{
+    color: white;
+    font-size: .8rem;
+}
+img{
+    border-radius:50% ;
+}
+/*GENERAL CSS*/
+.container{
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:    "item1 item1 item2 item5" 
+                            "item3 item4 item4 item5";
+    gap: 1rem;
+    padding: 20px;
+    width: 1440px;
+}
+.item-1,.item-2,.item-3,.item-4,.item-5{
+    font-family: 'Barlow Semi Condensed' ,sans-serif;
+    border-radius: 15px;
+}
+.testimonial-head{
+    position: relative;
+}
+.testimonial-name{
+    position: relative;
+    bottom: 30px;
+    margin: 5px;
+    font-weight: 700;
+}
+.testimonial{
+    position: absolute;
+    margin:  0 7px;
+    top: 30px;
+    left: 60px;
+    font-weight: 400;
+}
+/*CSS FOR ITEM1*/
+.item-1{
+ grid-column: item1;
+ background-color: #733fc8;
+ padding: 40px;
+}
+/*CSS FOR ITEM2*/
+.item-2{
+    grid-area: item2;
+    padding: 40px;
+    background-color: #49556b;
+}
+/*CSS FOR ITEM3*/
+.item-3{
+    grid-area: item3;
+    padding: 40px;
+    background-color: white;
+}
+.item-3 h2{
+    color: black;
+}
+.item-3 span{
+    color: black;
+}
+.item-3 p{
+    color: black;
+}
+/*CSS FOR ITEM4*/
+.item-4{
+    grid-area: item4;
+    padding: 40px;
+    background-color: #18202d;
+}
+/*CSS FOR ITEM5*/
+.item-5{
+    grid-area: item5;
+    padding: 40px;
+    background-color: white;
+}
+.item-5 h2{
+    color: black;
+}
+.item-5 span{
+    color: black;
+}
+.item-5 p{
+    color: black;
+}
